@@ -63,22 +63,22 @@
           <!-- Display the larger image above the thumbnails -->
           <% product.image.forEach((element, i) => { %>
           <% if (i === 0) { %>
-          <img class='slideshow-items active' src="http://localhost:3000/admin/img/<%= element %>"
+          <img class='slideshow-items active' src="/admin/img/<%= element %>"
             alt="productImage">
           <% } else { %>
-          <img class="slideshow-items" src="http://localhost:3000/admin/img/<%= element %>" alt="productImage">
+          <img class="slideshow-items" src="/admin/img/<%= element %>" alt="productImage">
           <% } %>
           <% }) %>
           <!-- Display the small thumbnail images below the main large image -->
           <div class='row mt-3'>
             <div class="col-2">
-              <img style="width: 300px;"  class='slideshow-thumbnails active ' src="http://localhost:3000/admin/img/<%= product.image[0] %>"
+              <img style="width: 300px;"  class='slideshow-thumbnails active ' src="/admin/img/<%= product.image[0] %>"
                 alt="productImage">
             </div>
             <% product.image.forEach((element, i) => { %>
             <% if (i > 0) { %>
             <div class="col-2">
-              <img style="width: 300px;" class="slideshow-thumbnails  " src="http://localhost:3000/admin/img/<%= element %>"
+              <img style="width: 300px;" class="slideshow-thumbnails  " src="/admin/img/<%= element %>"
                 alt="productImage">
             </div>
             <% } %>
