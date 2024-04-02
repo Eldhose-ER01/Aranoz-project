@@ -218,7 +218,7 @@ const salesreport = async (req, res) => {
         const cCancelled = await Order.countDocuments(countCancelled);
         
     const totalAmount = aggregate[0].totalAmount;
-
+    
     const deliveredProducts = deliveredPro.map((order) => {
       const orderDate = new Date(order.date);
       const formatttedDate = orderDate.toLocaleString();
@@ -226,7 +226,7 @@ const salesreport = async (req, res) => {
       const finalAmount = order.totalAmount;
       const paymentType = order.paymentType;
       const firstName = order.user ? order.user.firstName : "";
-
+      
       return {
         date: formatttedDate,
         _id: orderId,
