@@ -16,13 +16,14 @@ const sMail = ((email, otp) => {
         port: 465,
         secure: true,
         auth: {
-            user: "eldhoseer440@gmail.com",
-            pass: "xjzpgnezqeaxdxmh"
+            
+            user: "eldhoseer08@gmail.com",
+            pass: "ejjqhghsjqcyymln"
         }
     });
 
     const mailOptions = {
-        from: "eldhoseer440@gmail.com",
+        from: "eldhoseer08@gmail.com",
         to: email,
         subject: 'Your OTP',
         text: `Your OTP is ${otp}`
