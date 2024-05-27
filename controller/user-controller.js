@@ -4,7 +4,6 @@ const nodemailer = require("nodemailer")
 const { otpGen } = require("./otpgenerator")
 const Product=require('../model/productmodel')
 const { listproduct } = require('./product-controller')
-const { status } = require('init')
 const Banner=require('../model/banner-model')
 
 
